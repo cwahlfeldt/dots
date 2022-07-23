@@ -2,6 +2,9 @@
 
 cd ~/
 
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
 xcode-select --install
 
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
@@ -13,7 +16,6 @@ brew install \
     exa \
     zsh \
     ripgrep \
-    powerlevel10k \
     php \
     neovim \
     lua \
@@ -54,3 +56,9 @@ chsh -s $(which zsh)
 zsh
 
 source ~/.zshrc
+
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+
+fnm install --lts
+npm i -g npm serve prettier eslint

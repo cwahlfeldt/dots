@@ -1,0 +1,10 @@
+[user]
+	name = Chris Wahlfeldt
+	email = chrisw@pixotech.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[init]
+	defaultBranch = develop
