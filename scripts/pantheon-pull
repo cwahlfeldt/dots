@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+curl -L $(terminus backup:get $1.live --element=db) --output dump.sql.gz && gunzip dump.sql.gz
+curl -L $(terminus backup:get $1.live --element=files) --output files.sql.gz
