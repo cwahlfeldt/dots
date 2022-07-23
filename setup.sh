@@ -18,9 +18,9 @@ brew install \
     ripgrep \
     php \
     neovim \
-    lua \
     fzf \
     drud/ddev/ddev \
+    koekeishiya/formulae/yabai \
     bat \
     ncdu \
     nethack \
@@ -31,6 +31,8 @@ brew install \
     tree-sitter \
     sqlite \
     zsh-autosuggestions \
+    pfetch \
+    neofetch \
     zsh-history-substring-search
 
 brew install --cask \
@@ -62,3 +64,11 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 
 fnm install --lts
 npm i -g npm serve prettier eslint
+
+# post nstall steps
+# 1. setup phpstorm and webstorm
+# 2. import all passwords to both firefox and google-chrome
+# 3. add ssh keys
+# 4. fire up docker
+# 5. log into palantir shit
+# 6. pull down work repos and set them up in docker
